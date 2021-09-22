@@ -1,0 +1,1 @@
+{"version":3,"file":"error-card.js","sourceRoot":"","sources":["../../models/error-card.ts"],"names":[],"mappings":";;;AAAA,2CAA0C;AAE1C,MAAa,SAAU,SAAQ,yBAAY;IACvC,YAAY,KAAa;QACrB,KAAK,EAAE,CAAC;QACR,IAAI,CAAC,QAAQ,CAAC,SAAS,CAAC,CAAC;QACzB,IAAI,CAAC,QAAQ,CAAC,OAAO,CAAC,CAAC;QACvB,IAAI,CAAC,cAAc,CAAC,KAAK,CAAC,CAAC;IAC/B,CAAC;CACJ;AAPD,8BAOC"}
