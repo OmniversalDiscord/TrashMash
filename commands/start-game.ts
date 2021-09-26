@@ -36,7 +36,7 @@ export class StartCommand extends Command {
                 for (let entry of game.getAllEntries()) {
                     let message = await msg.say("*Rolling...*");
                     await sleep(0);
-                    if (isArray(message)) {
+                    if (Array.isArray(message)) {
                         await message[0].edit(`<@${entry.user.id}>`, await entry.roll());
                     } else {
                         await message.edit(`<@${entry.user.id}>`, await entry.roll());
