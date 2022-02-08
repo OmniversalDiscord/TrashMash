@@ -34,7 +34,10 @@ export class TracksService {
         "Light Up (Acoustic)",
         "Numb (Acoustic)"
     ];
-
+    private brand_blacklist = [
+        "S",
+        "M"
+    ];
     private genre_blacklist = [
         "Label",
         "Miscellaneous",
@@ -46,7 +49,6 @@ export class TracksService {
         "Compilation",
         "Chillout"
     ];
-
     private artist_blacklist = [
         "Aero Chord",
         "Razihel & Aero Chord",
@@ -76,6 +78,8 @@ export class TracksService {
         } else if (this.key_blacklist.includes(raw_track[10])) {
             return false;
         } else if (raw_track[0].startsWith("SILK")) {
+            return false;
+        } else if (this.brand_blacklist.includes(raw_track[3])) {
             return false;
         }
         return true;
