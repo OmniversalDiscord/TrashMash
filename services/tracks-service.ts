@@ -58,13 +58,13 @@ export class TracksService {
         "Dirtyphonics & Bassnectar"
     ];
     private bpm_blacklist = [
-	    "Freetime",
-		"N/A"
+	"Freetime",
+	"N/A"
 	];
     private key_blacklist = [
-	    "mix",
-		"Various",
-		"N/A"
+	"mix",
+	"Various",
+	"N/A"
     ];
     private validTrack(raw_track: string[]): boolean {
         if (this.genre_blacklist.includes(raw_track[4])) {
